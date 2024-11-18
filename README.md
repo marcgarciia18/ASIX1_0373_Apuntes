@@ -133,10 +133,10 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
 
 ## Estructura basica de HTML
 
-+ **!DOCTYPE html:** Declara el tipo de documento.
-+ **html /html:** Raíz de todo el documento HTML.
-+ **head /head:** Contiene metadatos sobre la página, como el título.
-+ **body /body:** Contiene el contenido visible de la página.
++ **<!DOCTYPE html>:** Declara el tipo de documento.
++ **<html> </html>:** Raíz de todo el documento HTML.
++ **<head> </head>:** Contiene metadatos sobre la página, como el título.
++ **<body> </body>:** Contiene el contenido visible de la página.
 
 ```
 <!DOCTYPE html>
@@ -150,4 +150,18 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
     
 </body>
 </html>
-````
+```
+## Etiquetas basicas de HTMl
++ <h1>,<h2>,<h3>,<h4>,<h5>,<h6> Esta etiqueta hace referencia al tipo de encabezado que queremos utilizar, a mas grande queremos nuestro titulo de encabezado menor sera el numero, a mas pequeño utilizaremos un numero mayor
++ <p> </p> Esta etiqueta sirve para determinar que vamos a utilizar un parrafo de texto
++ <strong> </strong> Esta etiqueta sirve para poner las palabras que esten dentro de esta en NEGRITA
++ <em> </em> Esta etiqueta sirve para poner las palabras que esten dentro de esta en CURSIVA
++ <u></u> Esta etiqueta sirve para poner las palabras que esten dentro de esta SUBRAYADAS
++ <br> Esta etiqueta sirve para hacer un salto de linea
++ <hr> Esta etiqueta sirve para hacer una linea divisora en la pagina
++ <li> </li> Esta etiqueta sirve para generar una lista, va  acompañado de las etiquetas <ol> y <li>
++ <ul> </ul> Esta etiqueta sirve para generar listas desordenadas por puntos
++ <ol> </ol> Esta etiqueta sirve para generar listas ordenada por numeros
++ <a> </a> Esta etiqueta sirve para generar un enlace 
++ <img> </img> Esta etiqueta sirve para introducir imagenes en nuestro documento, para ello necesitaremos de una ruta absoluta o una ruta relativa
+
