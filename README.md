@@ -158,9 +158,15 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
 + ``<em> </em>`` Esta etiqueta sirve para poner las palabras que esten dentro de esta en CURSIVA
 + ``<u></u>`` Esta etiqueta sirve para poner las palabras que esten dentro de esta SUBRAYADAS
 + ``<br>`` Esta etiqueta sirve para hacer un salto de linea
-+ ``<hr>`` Esta etiqueta sirve para hacer una linea divisora en la pagina<li> </li> Esta etiqueta sirve para generar una lista, va  acompañado de las etiquetas <ol> y <li>
++ ``<hr>`` Esta etiqueta sirve para hacer una linea divisora en la pagina 
++ ``<li> </li>`` Esta etiqueta sirve para generar una lista, va  acompañado de las etiquetas ``<ol> y <li>``
 + ``<ul> </ul>`` Esta etiqueta sirve para generar listas desordenadas por puntos
 + ``<ol> </ol>`` Esta etiqueta sirve para generar listas ordenada por numeros
 +  ``<a> </a>`` Esta etiqueta sirve para generar un enlace 
 + ``<img> </img>`` Esta etiqueta sirve para introducir imagenes en nuestro documento, para ello necesitaremos de una ruta absoluta o una ruta relativa
 
+## Rutas
+En HTML cuando necesitamos enlazar a otros documentos, ya sean documentos HTML, hojas CSS o imagenes podemos utilizar las rutas para especificar la ubicacion de estos archivos.
+Existen dos tipos de rutas:
+* **Rutas Absolutas:** Estas especifican la ubicacion al completo del archivo, empezando desdee  el dominio. ``<img src="ubicacionprincipal/carpetadondeseencuentra/archivoaenlazar">``
+* **Rutas Relativas** Estas especifican la ubicacion al archivo respecto a donde nos encontramos, si necesitamos movernos entre estas utilizaremos un "." o ".." ``<img src="./img/imagen1>`` | ``<img src ="../img/imagen2>``
