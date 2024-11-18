@@ -97,7 +97,7 @@ GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de co
 
 ## Como clonar un repositorio
 Para clonar un repositorio en github deberemos seguir los siguientes pasos:
-1. Deberemos obtener nuestra _URL_ del repositorio que queremos clonar, para ello debe estar creado previamente y una vez lo tengamos deberemos acceder al **_boton verde "CODE"_** y en el desplegable veremos la url en _HTTPSS_, copiaremos esta para luego
+1. Deberemos obtener nuestra _URL_ del repositorio que queremos clonar, para ello debe estar creado previamente y una vez lo tengamos deberemos acceder al **_boton verde "CODE"_** y en el desplegable veremos la url en _HTTPS_, copiaremos esta para luego
 
 ![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/url_clonar.png "URL para clonar repositorio")
 
@@ -133,10 +133,10 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
 
 ## Estructura basica de HTML
 
-+ **<!DOCTYPE html>:** Declara el tipo de documento.
-+ **<html> </html>:** Raíz de todo el documento HTML.
-+ **<head> </head>:** Contiene metadatos sobre la página, como el título.
-+ **<body> </body>:** Contiene el contenido visible de la página.
++ **``<!DOCTYPE html>``:** Declara el tipo de documento.
++ **``<html> </html>``:** Raíz de todo el documento HTML.
++ **``<head> </head>``:** Contiene metadatos sobre la página, como el título.
++ **``<body> </body>``:** Contiene el contenido visible de la página.
 
 ```
 <!DOCTYPE html>
@@ -152,6 +152,7 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
 </html>
 ```
 ## Etiquetas basicas de HTMl
+
 + ``<h1><h2<h3><h4><h5><h6>`` Esta etiqueta hace referencia al tipo de encabezado que queremos utilizar, a mas grande queremos nuestro titulo de encabezado menor sera el numero, a mas pequeño utilizaremos un numero mayor
 + ``<p> </p>`` Esta etiqueta sirve para determinar que vamos a utilizar un parrafo de texto
 + ``<strong> </strong>`` Esta etiqueta sirve para poner las palabras que esten dentro de esta en NEGRITA
@@ -166,7 +167,22 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
 + ``<img> </img>`` Esta etiqueta sirve para introducir imagenes en nuestro documento, para ello necesitaremos de una ruta absoluta o una ruta relativa
 
 ## Rutas
+
 En HTML cuando necesitamos enlazar a otros documentos, ya sean documentos HTML, hojas CSS o imagenes podemos utilizar las rutas para especificar la ubicacion de estos archivos.
 Existen dos tipos de rutas:
 * **Rutas Absolutas:** Estas especifican la ubicacion al completo del archivo, empezando desdee  el dominio. ``<img src="ubicacionprincipal/carpetadondeseencuentra/archivoaenlazar">``
 * **Rutas Relativas** Estas especifican la ubicacion al archivo respecto a donde nos encontramos, si necesitamos movernos entre estas utilizaremos un "." o ".." ``<img src="./img/imagen1>`` | ``<img src ="../img/imagen2>``
+
+## Elementos semanticos en HTML
+
+Los elementos semanticos en HTML son aquellos que indican el proposito de diferentes  secciones de la pagina web
+Los elementos mas a destacar son: 
+
++ ``<header>`` Representa el encabezado de una sección o página, generalmente contiene el título y la navegación principal.
++ ``<footer>`` Representa el pie de página de una sección o página, generalmente contiene información de copyright, enlaces a políticas de privacidad, etc.
++ ``<article>`` Define un artículo independiente, como una publicación de blog o un artículo de noticias.
++ ``<section>`` Representa una sección genérica de contenido.
++ ``<nav>``  Define una sección de navegación, como un menú.
++ ``<figure>`` Define una unidad de contenido autocontenido, como una imagen, un diagrama, una cita, etc.
+
+
