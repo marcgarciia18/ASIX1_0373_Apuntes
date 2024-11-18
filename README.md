@@ -18,7 +18,7 @@ Las etiquetas en **_markdown_** y HTML pueden anidarse.
 2. Segundo punto de la lista
     * Primer elemento de la sublista 2
     * Segundo elemento de la sublista 2
-3. Primer punto de la lista 
+3. Tercer punto de la lista 
 
 * Primer punto de la lista desordenada
 - Segundo punto de la lista desordenada
@@ -28,8 +28,8 @@ Las etiquetas en **_markdown_** y HTML pueden anidarse.
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 
 **Como mostrar código en un repositorio**
-```
-HTML
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,4 +61,50 @@ HTML
 |**ASIX1**|Curso 24-25|33|
 |DAW2|Curso 24-25|29|
 
+___
+
+# Git
+Git es un sistema de control de versiones que permite a los desarrolladores rastrear cambios en el código, trabajar en diferentes versiones simultáneamente y colaborar de manera efectiva.
+
+## Comandos basicos de git
++ git clone -> sirve para clonar nuestro repositorio en loca
++ git init -> reinicia el repositorio
++ git branch -> crea diferentes ramas de desarrollo que pueden converger en el mismo repositorio
++ git add -> añade contenido del directorio de trabajo al área de ensayo
++ git commit -m "Comentario del comit" -> sirve para realizar commits con un mensaje
++ git push origin main -> sincroniza el repositorio local con el que esta en red
++ git pull -> si modificamos el repositorio online sirve para sincronizarlo con el local
+
+___
+
+# Github
+GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de control de versiones Git. Permite a los desarrolladores almacenar, compartir y trabajar en proyectos de código fuente de manera conjunta
+
+## Como crear un repositorio
+
+1. Deberemos darle a **_create new repositor_**
+![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/crear_repo.png "Crear nuevo repositorio")
+
+2. Configuraremos el repositorio con cosas como pueden ser:
+    + Nombre del repositorio
+    + Descripcion adicional para este
+    + Decidir si hacerlo publico o no
+    + Inicializar el repositorio
+    + Añadir un README al repositorio
+![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/nuevo_repo.png "Configurar nuevo repositorio")
+
+
+## Como clonar un repositorio
+Para clonar un repositorio en github deberemos seguir los siguientes pasos:
+1. Deberemos obtener nuestra _URL_ del repositorio que queremos clonar, para ello debe estar creado previamente y una vez lo tengamos deberemos acceder al **_boton verde "CODE"_** y en el desplegable veremos la url en _HTTPSS_, copiaremos esta para luego
+![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/url_clonar.png "URL para clonar repositorio")
+
+2. Una vez con la _URL_ deberemos ir a nuestro **_CMD_** para poder clonarlo, una vez dentro de este deberemos buscar la carpeta donde tenemos nuestro repositorio
+![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/cmd_repo.png "Carpeta donde esta repositorio")
+
+3. Cuando estemos dentro de la carpeta deberemos utilizar el siguiente comando -> **_git clone "pegar url"_** 
+![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/git_clone.png "Comando git clone")
+
+4. Finalmente ya tendremos clonado el repositorio que se encuentra en red en local.
+![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/repo_clonado.png "Repositorio clonado en local")
 
