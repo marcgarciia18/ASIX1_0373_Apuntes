@@ -1,16 +1,43 @@
 # ASIX1_0373_Apuntes
-Apuntes de Lenguaje de Marcas Marc Garcia Bardales
 
-# ASIX1_AprendizajeMarkdown
-## Segundo nivel de encabezado
-### Tercer nivel de encabezado
-#### Cuarto nivel de encabezado
-##### Quinto nivel de encabezado
-###### Sexto nivel de encabezado
+## INDICE_DE_APUNTES
++ [MARKDOWN](#markdown)
++ [GIT](#git)
++ [GITHUB](#github)
++ [HTML](#html)
+___
 
-Estos son mis apuntes del __"0373"__ del ciclo de ASIX del curso **24/25**
+# [MARKDOWN](#indice_de_apuntes)
 
-Las etiquetas en **_markdown_** y HTML pueden anidarse.
+## ¿Qué es Markdown?
+Markdown es un lenguaje de marcado ligero diseñado para hacer que la escritura y el formato de texto sean más fáciles y legibles
+
+## Encabezados
+Markdown nos ofrece una forma sencilla y flexible de crear encabezados en los documentos permitiendo organizar el contenido de manera clara y jerárquica, existen distintos tipos de encabezados:
+
++ H1: Se utiliza para el título principal de un documento o sección. Se representa con un solo numeral (#)
+
+# Este es un encabezado de nivel 1 (H1)
+
++ H2: Se utiliza para subtítulos o títulos de secciones secundarias. Se representa con dos numerales (##)
+
+## Este es un encabezado de nivel 2 (H2)
+
++ H3: Se utiliza para subtítulos de nivel inferior. Se representa con tres numerales (###)
+
+### Este es un encabezado de nivel 3 (H3)
+
++ H4, H5, H6: Se utilizan para encabezados de niveles aún más bajos, siguiendo la misma lógica.
+
+#### Este es un encabezado de nivel 4 (H4)
+
+##### Este es un encabezado de nivel 5 (H5)
+
+###### Este es un encabezado de nivel 6 (H6)
+
+
+## Listas
+En markdown se pueden crear listas tanto ordenadas como desordenadas, para ello utilizaremos un orden numerico en caso de querer nuestra lista ordenada o utilizaremos los caracteres "* , + , -" en caso de querer una lista desordenada
 
 1. Primer punto de la lista
     1. Primer elemento de la sublista 1
@@ -24,36 +51,37 @@ Las etiquetas en **_markdown_** y HTML pueden anidarse.
 - Segundo punto de la lista desordenada
 + Tercer punto de la lista desordenada
 
-
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-
-**Como mostrar código en un repositorio**
+## Insercion de codigo
+Para insertar codigo en markdown y que se pueda mostrar en pantalla utilizaremos ``` para abrir nuestra "etiqueta" y otras tres para cerrar, añadiendo dentro el codigo
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ASIX1 CODIGO PANTALLA MARKDOWN</title>
 </head>
 <body>
     
 </body>
 </html>
-
 ```
-## Como poner un link
-[textoclick](URL "TituloOpcional")
 
-[Pagina web de Jesuites Bellvitge](https://www.fje.edu/ca/jesuites-bellvitge "TituloOpcional")
+## Insercion de links
+En referencia a los links existe una manera de hacerlo, abriremos corchetes para escribir el texto que aparecera en el link que pulsaremos, luego abriremos parentesis para añadir la URL de esta y entre comillas un texto opcional para cuando tengamos el cursor encima del texto
 
-## Como poner una imagen
+```[textoclick](URL "TituloOpcional")```
 
+[Pagina web de Jesuites Bellvitge](https://www.fje.edu/ca/jesuites-bellvitge "Jesuites")
+
+## Insercion de imagenes
+Para la insercion de imagenes utilizaremos un metodo bastante parecido al de los links, primero abriremos corchetes para escribir el nombre de dicha imagen, luego abriremos parentesis para añadir la url de la imagen que previamente habremos subido a github y para acabar pondremos comillas con un texto por si la imagen falla y no carga en nuestra web
+
+```[tituloimagen](URL "TituloOpcional")```
 ![JcReyes](https://github.com/marcgarciia18/ASIX1_AprendizajeMarkdown/blob/main/Imagenes/JC.jpg "ReyDeEspaña")
 
-
-## Como añadir tablas
+## Tablas
 
 |Titulo 1 | Titulo 2 | Titulo 3 |
 |:----------:|:---------------:|:----------:|
@@ -63,7 +91,7 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
 
 ___
 
-# Git
+# [GIT](#indice_de_apuntes)
 Git es un sistema de control de versiones que permite a los desarrolladores rastrear cambios en el código, trabajar en diferentes versiones simultáneamente y colaborar de manera efectiva.
 
 ## Comandos basicos de git
@@ -77,7 +105,7 @@ Git es un sistema de control de versiones que permite a los desarrolladores rast
 
 ___
 
-# Github
+# [GITHUB](#indice_de_apuntes)
 GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de control de versiones Git. Permite a los desarrolladores almacenar, compartir y trabajar en proyectos de código fuente de manera conjunta
 
 ## Como crear un repositorio
@@ -116,7 +144,7 @@ Para clonar un repositorio en github deberemos seguir los siguientes pasos:
 
 ___
 
-# HTML
+# [HTML](#indice_de_apuntes)
 
 ## Introduccion a HTML
 
@@ -178,7 +206,7 @@ Existen dos tipos de rutas:
 Los elementos semanticos en HTML son aquellos que indican el proposito de diferentes  secciones de la pagina web
 Los elementos mas a destacar son: 
 
-+ **``<header>`**` Representa el encabezado de una sección o página, generalmente contiene el título y la navegación principal.
++ **``<header>``** Representa el encabezado de una sección o página, generalmente contiene el título y la navegación principal.
 + **``<footer>``** Representa el pie de página de una sección o página, generalmente contiene información de copyright, enlaces a políticas de privacidad, etc.
 + **``<article>``** Define un artículo independiente, como una publicación de blog o un artículo de noticias.
 + **``<section>``** Representa una sección genérica de contenido.
@@ -209,6 +237,7 @@ Estos formularios utilizan unas etiquetas especificas:
 
 ### **EJEMPLO DE FORMULARIO**
 Este tipo de formulario tiene varias partes, la primera nos pedira que escribamos un nombre y una contraseña, la segunda parte nos pedira que seleccionemos el idioma que hablamos y nuestra nacionalidad
+
 **_Parte1_**
 
 ![FormularioHTML](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/formulario1.png "Formulario1")
@@ -245,4 +274,3 @@ Este tipo de formulario tiene varias partes, la primera nos pedira que escribamo
             <label for="Portuguese">Portuguese</label>
         </fieldset> 
 ```
-
