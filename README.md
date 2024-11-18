@@ -84,7 +84,7 @@ GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de co
 
 1. Deberemos darle a **_create new repositor_**
 
-![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/crear_repo.png "Crear nuevo repositorio")
+![RepositorioNuevo](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/crear_repo.png "Crear nuevo repositorio")
 
 2. Configuraremos el repositorio con cosas como pueden ser:
     + Nombre del repositorio
@@ -92,27 +92,27 @@ GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de co
     + Decidir si hacerlo publico o no
     + Inicializar el repositorio
     + Añadir un README al repositorio
-![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/nuevo_repo.png "Configurar nuevo repositorio")
+![RepositorioConfigurado](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/nuevo_repo.png "Configurar nuevo repositorio")
 
 
 ## Como clonar un repositorio
 Para clonar un repositorio en github deberemos seguir los siguientes pasos:
 1. Deberemos obtener nuestra _URL_ del repositorio que queremos clonar, para ello debe estar creado previamente y una vez lo tengamos deberemos acceder al **_boton verde "CODE"_** y en el desplegable veremos la url en _HTTPS_, copiaremos esta para luego
 
-![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/url_clonar.png "URL para clonar repositorio")
+![URLRepositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/url_clonar.png "URL para clonar repositorio")
 
 2. Una vez con la _URL_ deberemos ir a nuestro **_CMD_** para poder clonarlo, una vez dentro de este deberemos buscar la carpeta donde tenemos nuestro repositorio
 
-![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/cmd_repo.png "Carpeta donde esta repositorio")
+![CarpetaRepositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/cmd_repo.png "Carpeta donde esta repositorio")
 
 3. Cuando estemos dentro de la carpeta deberemos utilizar el siguiente comando -> **_git clone "pegar url"_** 
 
 
-![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/git_clone.png "Comando git clone")
+![Comando](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/git_clone.png "Comando git clone")
 
 4. Finalmente ya tendremos clonado el repositorio que se encuentra en red en local.
 
-![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/repo_clonado.png "Repositorio clonado en local")
+![RepositorioClonado](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/repo_clonado.png "Repositorio clonado en local")
 
 ___
 
@@ -153,18 +153,18 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas we
 ```
 ## Etiquetas basicas de HTMl
 
-+ ``<h1><h2<h3><h4><h5><h6>`` Esta etiqueta hace referencia al tipo de encabezado que queremos utilizar, a mas grande queremos nuestro titulo de encabezado menor sera el numero, a mas pequeño utilizaremos un numero mayor
-+ ``<p> </p>`` Esta etiqueta sirve para determinar que vamos a utilizar un parrafo de texto
-+ ``<strong> </strong>`` Esta etiqueta sirve para poner las palabras que esten dentro de esta en NEGRITA
-+ ``<em> </em>`` Esta etiqueta sirve para poner las palabras que esten dentro de esta en CURSIVA
-+ ``<u></u>`` Esta etiqueta sirve para poner las palabras que esten dentro de esta SUBRAYADAS
-+ ``<br>`` Esta etiqueta sirve para hacer un salto de linea
-+ ``<hr>`` Esta etiqueta sirve para hacer una linea divisora en la pagina 
-+ ``<li> </li>`` Esta etiqueta sirve para generar una lista, va  acompañado de las etiquetas ``<ol> y <li>``
-+ ``<ul> </ul>`` Esta etiqueta sirve para generar listas desordenadas por puntos
-+ ``<ol> </ol>`` Esta etiqueta sirve para generar listas ordenada por numeros
-+  ``<a> </a>`` Esta etiqueta sirve para generar un enlace 
-+ ``<img> </img>`` Esta etiqueta sirve para introducir imagenes en nuestro documento, para ello necesitaremos de una ruta absoluta o una ruta relativa
++ **``<h1><h2<h3><h4><h5><h6>`` Esta etiqueta hace referencia al tipo de encabezado que queremos utilizar, a mas grande queremos nuestro titulo de encabezado menor sera el numero, a mas pequeño utilizaremos un numero mayor
++ **``<p> </p>``** Esta etiqueta sirve para determinar que vamos a utilizar un parrafo de texto
++ **``<strong> </strong>``** Esta etiqueta sirve para poner las palabras que esten dentro de esta en NEGRITA
++ **``<em> </em>``** Esta etiqueta sirve para poner las palabras que esten dentro de esta en CURSIVA
++ **``<u></u>``** Esta etiqueta sirve para poner las palabras que esten dentro de esta SUBRAYADAS
++ **``<br>``** Esta etiqueta sirve para hacer un salto de linea
++ **``<hr>``** Esta etiqueta sirve para hacer una linea divisora en la pagina 
++ **``<li> </li>``** Esta etiqueta sirve para generar una lista, va  acompañado de las etiquetas ``<ol> y <li>``
++ **``<ul> </ul>``** Esta etiqueta sirve para generar listas desordenadas por puntos
++ **``<ol> </ol>``** Esta etiqueta sirve para generar listas ordenada por numeros
++ ** ``<a> </a>``** Esta etiqueta sirve para generar un enlace 
++ **``<img> </img>``** Esta etiqueta sirve para introducir imagenes en nuestro documento, para ello necesitaremos de una ruta absoluta o una ruta relativa
 
 ## Rutas
 
@@ -178,11 +178,71 @@ Existen dos tipos de rutas:
 Los elementos semanticos en HTML son aquellos que indican el proposito de diferentes  secciones de la pagina web
 Los elementos mas a destacar son: 
 
-+ ``<header>`` Representa el encabezado de una sección o página, generalmente contiene el título y la navegación principal.
-+ ``<footer>`` Representa el pie de página de una sección o página, generalmente contiene información de copyright, enlaces a políticas de privacidad, etc.
-+ ``<article>`` Define un artículo independiente, como una publicación de blog o un artículo de noticias.
-+ ``<section>`` Representa una sección genérica de contenido.
-+ ``<nav>``  Define una sección de navegación, como un menú.
-+ ``<figure>`` Define una unidad de contenido autocontenido, como una imagen, un diagrama, una cita, etc.
++ **``<header>`**` Representa el encabezado de una sección o página, generalmente contiene el título y la navegación principal.
++ **``<footer>``** Representa el pie de página de una sección o página, generalmente contiene información de copyright, enlaces a políticas de privacidad, etc.
++ **``<article>``** Define un artículo independiente, como una publicación de blog o un artículo de noticias.
++ **``<section>``** Representa una sección genérica de contenido.
++ **``<nav>``**  Define una sección de navegación, como un menú.
++ **``<figure>``** Define una unidad de contenido autocontenido, como una imagen, un diagrama, una cita, etc.
 
+![SemanticaHTML](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/html_semantico.png "Elementos Semanticos HTML")
+
+
+## Formularios
+
+Los formularios web sirven para interactuar con el usuario y que este pueda darnos cierta informacion. Esta informacion sirve para ser procesada segun la necesidad que tenga nuestra pagina web
+Estos formularios utilizan unas etiquetas especificas:
++ **``<form> </form>``** Se utiliza para crear formularios  que permitan al usuario enviar datos
++ **``<input> </input>``** Sirve para crear distintos tipos de campos 
+    + **``RADIO``** Boton de opcion que se agrupa con otros del mismo nombre
+    + **``CHECKBOX``** Casilla de verificacion 
+    + **``type``** Define el tipo de entrada que se  va a mostrar
+    + **``id``** Identificador unico para el campo
+    + **``name``** Nombre del campo de entrada
+    + **``value``** Valor predeterminado del campo o el valor enviado
+    + **``placeholder``** Texto que aparece en el campo cuando esta vacio
+    + **``disabled``** Desactiva el campo, evitando que el usuario interactue con el
+    + **``required``** Indica que el campo debe completarse antes de ser enviado
+    + **``readonly``** Hace que el campo sea solo de lectura
++ **``<label>``** Proporciona una etiqueta para un elemento del formulario
++ **``<fieldset> </fieldset>``** Agrupa secciones del formulario en un recuadro
+
+### **EJEMPLO DE FORMULARIO**
+Este tipo de formulario tiene varias partes, la primera nos pedira que escribamos un nombre y una contraseña, la segunda parte nos pedira que seleccionemos el idioma que hablamos y nuestra nacionalidad
+**_Parte1_**
+
+![FormularioHTML](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/formulario1.png "Formulario1")
+
+**_Parte2_**
+
+![FormularioHTML](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/formulario1.png "Formulario2")
+
+#### _Codigo del formulario_
+```
+    <form action="recepcion.php" method="GET">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Introduce tu contraeña"><br><br>
+
+        <fieldset>
+            <legend>Idioma</legend>
+            <input type="radio" id="Brazilian" name="idioma" value="Brazilian">
+            <label for="Brazilian">Brazilian</label>
+    
+            <input type="radio" id="Portuguese" name="idioma" value="Portuguese">
+            <label for="Portuguese">Portuguese</label>
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Nacionalidad</legend>
+            <input type="checkbox" id="Brazilian" name="idioma" value="Brazilian">
+            <label for="Brazilian">Brazilian</label>
+    
+            <input type="checkbox" id="Portuguese" name="idioma" value="Portuguese">
+            <label for="Portuguese">Portuguese</label>
+        </fieldset> 
+```
 
