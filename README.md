@@ -83,6 +83,7 @@ GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de co
 ## Como crear un repositorio
 
 1. Deberemos darle a **_create new repositor_**
+
 ![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/crear_repo.png "Crear nuevo repositorio")
 
 2. Configuraremos el repositorio con cosas como pueden ser:
@@ -97,14 +98,56 @@ GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de co
 ## Como clonar un repositorio
 Para clonar un repositorio en github deberemos seguir los siguientes pasos:
 1. Deberemos obtener nuestra _URL_ del repositorio que queremos clonar, para ello debe estar creado previamente y una vez lo tengamos deberemos acceder al **_boton verde "CODE"_** y en el desplegable veremos la url en _HTTPSS_, copiaremos esta para luego
+
 ![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/url_clonar.png "URL para clonar repositorio")
 
 2. Una vez con la _URL_ deberemos ir a nuestro **_CMD_** para poder clonarlo, una vez dentro de este deberemos buscar la carpeta donde tenemos nuestro repositorio
+
 ![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/cmd_repo.png "Carpeta donde esta repositorio")
 
 3. Cuando estemos dentro de la carpeta deberemos utilizar el siguiente comando -> **_git clone "pegar url"_** 
+
+
 ![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/git_clone.png "Comando git clone")
 
 4. Finalmente ya tendremos clonado el repositorio que se encuentra en red en local.
+
 ![Repositorio](https://github.com/marcgarciia18/ASIX1_0373_Apuntes/blob/main/img/repo_clonado.png "Repositorio clonado en local")
 
+___
+
+# HTML
+
+## Introduccion a HTML
+
+### ¿Qué es HTML?
+
+HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Imagina que es como un conjunto de bloques de construcción que te permiten estructurar y dar formato al contenido de una página web. Estos bloques se llaman "etiquetas".
+
+### ¿Para que sirve HTML?
+
++ **Organizar el contenido:** Define la estructura de una página, como encabezados, párrafos, listas, tablas, etc.
++ **Incluir multimedia:** Permite insertar imágenes, videos, audio y otros elementos multimedia en una página.
++ **Crear enlaces:** Crea vínculos a otras páginas web o a diferentes secciones de la misma página.
+++ **Dar formato:** Aunque de forma básica, puedes aplicar negrita, cursiva y otros estilos simples al texto.
+
+## Estructura basica de HTML
+
++ **!DOCTYPE html:** Declara el tipo de documento.
++ **html /html:** Raíz de todo el documento HTML.
++ **head /head:** Contiene metadatos sobre la página, como el título.
++ **body /body:** Contiene el contenido visible de la página.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes HTML</title>
+</head>
+<body>
+    
+</body>
+</html>
+````
