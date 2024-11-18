@@ -79,6 +79,7 @@ En referencia a los links existe una manera de hacerlo, abriremos corchetes para
 Para la insercion de imagenes utilizaremos un metodo bastante parecido al de los links, primero abriremos corchetes para escribir el nombre de dicha imagen, luego abriremos parentesis para añadir la url de la imagen que previamente habremos subido a github y para acabar pondremos comillas con un texto por si la imagen falla y no carga en nuestra web
 
 ```[tituloimagen](URL "TituloOpcional")```
+
 ![JcReyes](https://github.com/marcgarciia18/ASIX1_AprendizajeMarkdown/blob/main/Imagenes/JC.jpg "ReyDeEspaña")
 
 ## Tablas
