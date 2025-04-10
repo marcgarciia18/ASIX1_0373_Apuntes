@@ -5,6 +5,9 @@
 + [GIT](#git)
 + [GITHUB](#github)
 + [HTML](#html)
++ [CSS](#html)
++ [FLEXBOX](#flexbox)
+
 
 ___
 
@@ -381,13 +384,149 @@ Partes principales de una tabla:
 
 + Para diseños complejos, considerar usar CSS Grid o Flexbox en lugar de tablas.
 
-## Flexbox
+# [CSS](#indice_de_apuntes)
+## **Introducción a CSS**
+
+### **¿Qué es CSS?**
+CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación de documentos HTML. Controla el diseño, colores, fuentes y otros aspectos visuales de una página web.
+
+### **¿Para qué sirve CSS?**
++ **Separar el contenido** de la presentación
+
++ **Aplicar estilos consistentes** en todo un sitio web
+
++ **Crear diseños responsivos** que se adapten a diferentes dispositivos
+
++ **Mejorar la accesibilidad** y usabilidad de las páginas web
+
+### **Sintaxis básica de CSS**
+```
+selector {
+    propiedad: valor;
+    propiedad: valor;
+}
+```
+
+### **Formas de aplicar CSS**
+#### **CSS interno (en el head)**
+```css
+<head>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+```
+#### **CSS externo (archivo separado)**
+```css
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+```
+
+#### **CSS en línea (dentro de elementos)**
+
+```css
+<p style="color: red;">Texto rojo</p>
+```
+
+### **Selectores CSS**
+#### **Selectores básicos**
++ De elemento: ``p { }``
+
++ De clase: ``.clase { }``
+
++ De ID:`` #id { }``
+
++ Universal: ``* { }``
+
+#### **Selectores combinados**
++ Descendente: ``div p { }`` (todos los p dentro de div)
+
++ Hijo directo: ``div > p { }`` (solo p hijos directos de div)
+
++ Hermanos adyacentes: ``h1 + p { }`` (p que sigue inmediatamente a h1)
+
++ Hermanos generales: ``h1 ~ p { }`` (todos los p que siguen a h1)
+
+#### **Selectores de atributo**
++ ``[atributo]``: Elementos con el atributo
+
++ ``[atributo="valor"]``: Atributo con valor exacto
+
++ ``[atributo^="valor"]``: Atributo que comienza con valor
+
++ ``[atributo$="valor"]``: Atributo que termina con valor
+
++ ``[atributo*="valor"]``: Atributo que contiene valor
+
+### Especificidad CSS
+La especificidad determina qué reglas CSS se aplican cuando hay conflictos:
+
+1. **!important** (máxima prioridad)
+
+2. **Estilos en línea** (1000 puntos)
+
+3. **IDs** (100 puntos)
+
+4. **Clases, atributos y pseudoclases** (10 puntos)
+
+5. **Elementos y pseudoelementos** (1 punto)
+
+#### **Ejemplo**
+```css
+#nav .item a:hover {} /* Especificidad: 100 + 10 + 1 + 10 = 121 */
+```
+
+### Media Queries
+Permiten aplicar estilos según características del dispositivo:
+```css
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+```
+
+### Buenas prácticas CSS
++ **Usar nombres de clases descriptivos** (BEM methodology)
+
++ **Evitar el uso excesivo de !important**
+
++ **Organizar el código**(agrupar propiedades relacionadas)
+
++ **Comentar el código** para secciones importantes
+
++ **Minificar el CSS** para producción
+
++ **Usar sistemas de diseño** consistentes
+
++ **Priorizar el uso de Flexbox/Grid** para layouts
+
++ **Probar en múltiples navegadores** (cross-browser testing)
+
+
+
+
+
+
+
+
+
+
+
+# [FLEXBOX](#indice_de_apuntes)
 ### **Introducción a Flexbox**
 
 **Flexbox (Flexible Box Layout)** es un modelo de diseño en **CSS3** que permite diseñar estructuras **flexibles y responsivas** con facilidad.  
 Es útil para **distribuir espacio entre ítems** y alinearlos de forma predecible.
-
----
 
 ### **Conceptos básicos**
 
@@ -395,8 +534,6 @@ Es útil para **distribuir espacio entre ítems** y alinearlos de forma predecib
 - **Ítems flex (flex items):** Elementos hijos directos del contenedor flex.  
 - **Eje principal (main axis):** Eje primario (horizontal por defecto).  
 - **Eje transversal (cross axis):** Eje perpendicular al principal (vertical por defecto).  
-
----
 
 ### **Propiedades del contenedor flex**
 
