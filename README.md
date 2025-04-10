@@ -5,7 +5,7 @@
 + [GIT](#git)
 + [GITHUB](#github)
 + [HTML](#html)
-+ [CSS](#html)
++ [CSS](#css)
 + [FLEXBOX](#flexbox)
 
 
