@@ -7,7 +7,7 @@
 + [HTML](#html)
 + [CSS](#css)
 + [FLEXBOX](#flexbox)
-
++ [RESPONSIVE](#flexbox)
 
 ___
 
@@ -513,15 +513,6 @@ Permiten aplicar estilos según características del dispositivo:
 + **Probar en múltiples navegadores** (cross-browser testing)
 
 
-
-
-
-
-
-
-
-
-
 # [FLEXBOX](#indice_de_apuntes)
 ### **Introducción a Flexbox**
 
@@ -625,3 +616,62 @@ Es útil para **distribuir espacio entre ítems** y alinearlos de forma predecib
 + Evitar contenedores flex anidados innecesarios.
 
 + Usar ``flex: 1`` para ítems que deben ocupar espacio disponible.
+
+# [DISEÑO RESPONSIVE](#indice_de_apuntes)
+
+El **Diseño Responsive** (Responsive Design) es una técnica que permite a las páginas web adaptarse automáticamente a distintos tamaños de pantalla y dispositivos, como computadoras, tabletas y teléfonos móviles.
+
+### Características Clave
+
+- **Flexibilidad y adaptabilidad**: Los elementos de la página, como texto, imágenes y menús, se ajustan dinámicamente al tamaño del dispositivo.
+  
+- **Consultas de medios (Media Queries)**: Son reglas que permiten aplicar estilos específicos según las propiedades del dispositivo (como el ancho de la pantalla).
+
+- **Rejillas fluidas**: Se utilizan porcentajes en lugar de valores fijos para dimensionar los elementos.
+
+- **Imágenes y fuentes escalables**: Se ajustan automáticamente para mantener una buena proporción y legibilidad en diferentes tamaños de pantalla.
+
+### ¿Qué son las Media Queries?
+
+Las **Media Queries** permiten aplicar estilos CSS de manera condicional, dependiendo de características como el ancho, la altura o la orientación del dispositivo. Esto facilita adaptar el contenido de una página web a diferentes dispositivos sin necesidad de crear múltiples versiones de la misma.
+
+#### Funcionamiento
+
+- Las **Media Queries** detectan características específicas del dispositivo, como el ancho de la pantalla o su orientación (horizontal o vertical).
+  
+- Cuando se cumple la condición establecida en la consulta de medios, los estilos CSS definidos dentro de la media query se aplican al contenido.
+
+### **Ejemplo de Media Queries**
+#### Código CSS
+
+**Estilo general** (para todos los dispositivos):
+
+```css
+body {
+  background-color: blue;
+  color: white;
+}
+```
+
+**Estilo para tablets** (pantallas con un ancho máximo de 768px):
+```css
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+```
+
+**Estilo para móviles** (pantallas con un ancho máximo de 480px):
+```css
+@media (max-width: 480px) {
+  div {
+    display: flex;
+  }
+}
+```
+
+**Explicación:**
++ Pantallas grandes: El fondo de la página será azul para todos los dispositivos.
++ Tabletas (pantallas con un ancho máximo de 768px): El tamaño de la fuente del ``<h1>`` se establece en 50px.
++ Móviles (pantallas con un ancho máximo de 480px): El ``<div>`` tendrá la propiedad display: flex, lo que permite alinear sus elementos hijos de manera flexible.
