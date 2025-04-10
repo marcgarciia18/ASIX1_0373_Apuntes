@@ -276,3 +276,107 @@ Este tipo de formulario tiene varias partes, la primera nos pedira que escribamo
             <label for="Portuguese">Portuguese</label>
         </fieldset> 
 ```
+## Tablas
+
+### Introducción a las tablas en HTML
+Las tablas en HTML son estructuras que permiten organizar y presentar datos de forma ordenada en filas y columnas. Se utilizan principalmente para mostrar información tabular, aunque también pueden usarse para diseños de página (aunque actualmente se recomienda usar CSS para maquetación).
+
+#### **Estructura básica de una tabla**
+```
+    <table border="1" width="100%">
+        <!-- Contenido de la tabla -->
+    </table>
+```
+
+#### **Partes de una tabla**
+Partes principales de una tabla:
+**``<table>``**: Contenedor principal de la tabla.
+
+**``<thead>``**: Encabezado de la tabla (opcional).
+
+**``<tbody>``**: Cuerpo principal de la tabla.
+
+**``<tfoot>``**: Pie de tabla (opcional).
+
+**``<tr>``**: Define una fila (table row).
+
+**``<th>``**: Celda de encabezado (table header).
+
+**``<td>``**: Celda normal de datos (table data).
+
+### Atributos importantes
+**border: Define el grosor del borde de la tabla.
+
+**width**: Especifica el ancho de la tabla (recomendado usar 100%).
+
+**bgcolor**: Cambia el color de fondo (usar códigos hexadecimales como #FF0000 para rojo).
+
+**colspan**: Permite que una celda ocupe varias columnas.
+
+**rowspan**: Permite que una celda ocupe varias filas.
+
+#### **Ejemplo básico de tabla**
+```
+    <table border="1" width="100%">
+    <thead>
+        <tr bgcolor="#dddddd">
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+        </tr>
+        <tr>
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+            <td>Dato 6</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr bgcolor="#eeeeee">
+            <td colspan="3">Pie de tabla</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+### Combinando celdas
+#### **Ejemplo con colspan (combinación horizontal):**
+```
+<table border="1" width="100%">
+    <tr>
+        <th colspan="2">Encabezado combinado</th>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+</table>
+```
+#### **Ejemplo con rowspan (combinación vertical):**
+```
+<table border="1" width="100%">
+    <tr>
+        <th rowspan="2">Encabezado vertical</th>
+        <td>Celda 1</td>
+    </tr>
+    <tr>
+        <td>Celda 2</td>
+    </tr>
+</table>
+```
+### Buenas prácticas
++ Siempre usar ``<thead>``, ``<tbody>`` y ``<tfoot>`` para mejor estructura.
+
++ Definir width="100%" para adaptabilidad.
+
++ Usar ``<th>`` para encabezados semánticos.
+
++ Evitar tablas anidadas (tablas dentro de tablas) cuando sea posible.
+
++ Para diseños complejos, considerar usar CSS Grid o Flexbox en lugar de tablas.
