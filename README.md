@@ -7,7 +7,7 @@
 + [HTML](#html)
 + [CSS](#css)
 + [FLEXBOX](#flexbox)
-+ [RESPONSIVE](#flexbox)
++ [RESPONSIVE](#responsive)
 
 ___
 
@@ -617,7 +617,7 @@ Es útil para **distribuir espacio entre ítems** y alinearlos de forma predecib
 
 + Usar ``flex: 1`` para ítems que deben ocupar espacio disponible.
 
-# [DISEÑO RESPONSIVE](#indice_de_apuntes)
+# [RESPONSIVE](#indice_de_apuntes)
 
 El **Diseño Responsive** (Responsive Design) es una técnica que permite a las páginas web adaptarse automáticamente a distintos tamaños de pantalla y dispositivos, como computadoras, tabletas y teléfonos móviles.
 
