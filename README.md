@@ -305,7 +305,7 @@ Partes principales de una tabla:
 **``<td>``**: Celda normal de datos (table data).
 
 ### Atributos importantes
-**border: Define el grosor del borde de la tabla.
+**border**: Define el grosor del borde de la tabla.
 
 **width**: Especifica el ancho de la tabla (recomendado usar 100%).
 
@@ -380,3 +380,111 @@ Partes principales de una tabla:
 + Evitar tablas anidadas (tablas dentro de tablas) cuando sea posible.
 
 + Para diseños complejos, considerar usar CSS Grid o Flexbox en lugar de tablas.
+
+## Flexbox
+### **Introducción a Flexbox**
+
+**Flexbox (Flexible Box Layout)** es un modelo de diseño en **CSS3** que permite diseñar estructuras **flexibles y responsivas** con facilidad.  
+Es útil para **distribuir espacio entre ítems** y alinearlos de forma predecible.
+
+---
+
+### **Conceptos básicos**
+
+- **Contenedor flex (flex container):** Elemento padre que contiene los ítems flex.  
+- **Ítems flex (flex items):** Elementos hijos directos del contenedor flex.  
+- **Eje principal (main axis):** Eje primario (horizontal por defecto).  
+- **Eje transversal (cross axis):** Eje perpendicular al principal (vertical por defecto).  
+
+---
+
+### **Propiedades del contenedor flex**
+
+####  **`display`**
+**Define un contenedor como flex.**
+
+```css
+.contenedor {
+    display: flex; /* o inline-flex */
+}
+```
+####  **`flex-direction`**
+**Establece la dirección del eje principal.**
+```css
+    .contenedor {
+        flex-direction: row | row-reverse | column | column-reverse;
+    }
+```
+####  **`flex-wrap`**
+**Controla si los ítems deben envolverse.**
+```css
+    .contenedor {
+        flex-wrap: nowrap | wrap | wrap-reverse;
+    }
+```
+####  **`justify-content`**
+**Alinea los ítems en el eje principal**
+```css
+.contenedor {
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+}
+```
+####  **`align-items`**
+**Alinea los ítems en el eje transversal.**
+```css
+.contenedor {
+    align-items: stretch | flex-start | flex-end | center | baseline;
+}
+```
+####  **`align-content`**
+**Alinea las líneas del contenedor cuando hay espacio extra.**
+```css
+.contenedor {
+    align-content: stretch | flex-start | flex-end | center | space-between | space-around;
+}
+```
+### **Propiedades de los ítems flex**
+
+####  **`order`**
+**Controla el orden en que aparecen los ítems.**
+```css
+.item {
+    order: <número>; /* Valor por defecto: 0 */
+}
+```
+####  **`flex-grow`**
+**Define la capacidad de un ítem para crecer.**
+```css
+.item {
+    flex-grow: <número>; /* Valor por defecto: 0 */
+}
+```
+####  **`flex-shrink`**
+**Define la capacidad de un ítem para encogerse.**
+```css
+.item {
+    flex-shrink: <número>; /* Valor por defecto: 1 */
+}
+```
+####  **`flex`**
+**Propiedad abreviada de grow y shrink**
+```css
+.item {
+    flex: none | [ <'flex-grow'> || <'flex-shrink'>? ];
+}
+```
+####  **`align-self`**
+**Sobrescribe `align-items` para un ítem individual.**
+```css
+.item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+### Buenas prácticas
++ Usar ``flex-wrap``: wrap para diseños responsivos.
+
++ Combinar con ``@media queries`` para adaptarse a pantallas.
+
++ Evitar contenedores flex anidados innecesarios.
+
++ Usar ``flex: 1`` para ítems que deben ocupar espacio disponible.
